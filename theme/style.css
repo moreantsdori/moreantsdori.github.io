@@ -1,0 +1,1548 @@
+/*--------------------------------------------------------------- PRESET CSS -------------------------------------------------------------------------------*/
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+body {
+ background-color:#cfeae1;
+ background-image:none;
+ background-position:0 0;
+ background-repeat:no-repeat;
+ background-attachment:scroll;
+ background-size:auto;
+ font-family:Arial, Helvetica, sans-serif;
+ color:#5c5c5c;
+ font-size:12px;
+}
+h1 {
+font-family:Arial, Helvetica, sans-serif;
+font-size:26px;
+color:#3c3c3c;
+}
+h2 {
+font-family:Arial, Helvetica, sans-serif;
+font-size:24px;
+color:#3c3c3c;
+}
+h3 {
+font-family:Arial, Helvetica, sans-serif;
+font-size:22px;
+color:#3c3c3c;
+}
+h4 {
+font-family:Arial, Helvetica, sans-serif;
+font-size:20px;
+color:#3c3c3c;
+}
+h5 {
+font-family:Arial, Helvetica, sans-serif;
+font-size:18px;
+color:#3c3c3c;
+}
+h6 {
+font-family:Arial, Helvetica, sans-serif;
+font-size:16px;
+color:#3c3c3c;
+}
+a {
+ text-decoration:underline;
+ color:#348b6e;
+}
+a:hover {
+text-decoration:none;
+color:#348b6e;
+}
+a img {
+    border: 0 solid;
+}
+:focus {
+    outline: none;
+}
+p {
+    line-height: 1.5;
+}
+ul, ol {
+    margin: 0;
+    padding: 0 0 0 20px;
+    list-style: disc;
+}
+ol {
+    padding: 0 0 0 23px;
+    list-style: decimal;
+}
+li {
+    margin: 0;
+    padding: 0 0 10px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+th {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ background:#e8f5f1;
+ border-width:1px;
+ border-style:solid;
+ border-color:#D1EDE3;
+ color:#348b6e;
+ padding:7px;
+}
+td {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ background:#F3FAF8;
+ border-width:1px;
+ border-style:solid;
+ border-color:#D1EDE3;
+ color:#5c5c5c;
+ padding:6px;
+}
+hr {
+    border-top: 1px solid #D1EDE3;
+}
+/*--------------------------------------------------------------- GENERAL CSS -------------------------------------------------------------------------------*/
+.page-width {
+    width: 960px;
+    margin: 0 auto;
+}
+.floatLeft {
+    float: left;
+}
+.floatRight {
+    float: right;
+}
+.clearDiv {
+    clear: both;
+}
+/*--------------------------------------------------------------- TOP AREA CSS -------------------------------------------------------------------------------*/
+.themeBrandingArea {
+    padding: 10px 0;
+}
+.themeBrandingContainer {
+    display: table;
+    border: 0 solid;
+    width: 100%;
+}
+.tableRow {
+    display: table-row;
+}
+.tableCell {
+    display: table-cell
+}
+.themeLogoOuterContainer {
+    width: 1%;
+}
+.themeLogoArea {
+    padding-right: 25px;
+}
+.themeSitenameCaptionOuterContainer {
+    vertical-align: middle;
+    height: 100%;
+}
+.themeSitenameCaptionInnerContainer {
+    height: 100%;
+    vertical-align: middle;
+}
+.themeSitenameCaptionContainer {
+    vertical-align: middle;
+    height: 100%;
+}
+.themeSitename {
+    white-space: nowrap;
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:24px;
+ color:#2c3633;
+    padding: 3px 0;
+}
+.themeCaption {
+    white-space: nowrap;
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:14px;
+ color:#2c3633;
+}
+/*--------------------------------------------------------------- LEFT AREA CSS -------------------------------------------------------------------------------*/
+.leftArea {
+    width: 190px;
+    min-height: 5px;
+    height: auto !important;
+    height: 5px;
+}
+/*--------------------------------------------------------------- MENU AREA CSS -------------------------------------------------------------------------------*/
+#navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1px;
+    line-height: 0;
+}
+#navigation li {
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+ background-color:#d8ece5;
+ background-image:none;
+ background-repeat:repeat-x;
+ background-position:left top;
+    margin-bottom: 8px;
+    border: 1px solid #B6E4D4;
+}
+#navigation li a {
+    text-decoration: none;
+ font-family:Arial, Helvetica, sans-serif;
+ color:#4a6c61;
+ font-size:12px;
+    display: block;
+    line-height: 1.5;
+    float: left;
+    width: 100%;
+    text-decoration: none;
+    curser: pointer;
+}
+#navigation li a:hover, #navigation li.selected a, #navigation li.active a {
+ color:#8a0505;
+ background-color:#f3faf8;
+ background-image:none;
+ background-repeat:repeat-x;
+ background-position:left top;
+}
+#navigation li a span {
+    width: 86%;
+    float: left;
+    padding: 8px 10px 8px 6px;
+    word-wrap: break-word;
+    text-align: right;
+}
+#navigation li a em {
+    width: 10px;
+    float: left;
+    height: 10px;
+}
+#navigation li.navArrow a em, #navigation ul li:hover.navArrow a em, #navigation ul li.active.navArrow a em, #navigation ul li.selected.navArrow a em {
+    background: transparent url(images/navArrow.png) no-repeat scroll center left;
+    float: left;
+    height: 9px;
+    width: 8px;
+    margin-top: 13px;
+}
+#navigation ul li:hover.navArrow a em, #navigation ul li.active.navArrow a em, #navigation ul li.selected.navArrow a em {
+    background: transparent url(images/navArrow1.png) scroll center left no-repeat;
+}
+/*--------------------------------------------------------------- SUBMENU AREA CSS -------------------------------------------------------------------------------*/
+.submenu {
+    width: 195px;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+ background-color:#f3faf8;
+background-image:none;
+background-position:top left;
+background-repeat:repeat;
+ border-width:1px;
+border-style:solid;
+border-color:#B6E4D4;
+ border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+-o-border-radius:5px;
+    -webkit-transition: width 0.5s ease 0s;
+    -moz-transition: width 0.5s ease 0s;
+    -o-transition: width 0.5s ease 0s;
+    -ms-transition: width 0.5s ease 0s;
+    transition: width 0.5s ease 0s;
+}
+.submenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1px;
+    line-height: 0;
+}
+.submenu li {
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+.submenu li a {
+ color:#4a6c61;
+ font-size:12px;
+ font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-align: right;
+    display: block;
+    width: 95%;
+    line-height: 1.6;
+    float: left;
+    cursor: pointer;
+    padding: 10px 0;
+}
+.submenu li a:hover {
+color:#8a0505;
+background-color:transparent;
+background-image:none;
+background-position:top left;
+background-repeat:repeat;
+}
+.submenu li a span {
+    width: 150px;
+    float: left;
+    padding-left: 15px;
+    word-wrap: break-word;
+}
+.submenu li.navArrow a em, .submenu li:hover.navArrow a em {
+    background: url(images/navArrow.png) left top no-repeat;
+    float: left;
+    height: 8px;
+    width: 10px;
+    margin-top: 6px;
+    margin-left: 9px;
+}
+.submenu li:hover.navArrow a em {
+    background: url(images/navArrow1.png) left top no-repeat;
+}
+/*--------------------------------------------------------------- RIGHT AREA CSS -------------------------------------------------------------------------------*/
+.rightArea {
+    width: 770px;
+}
+.rightAreaInner {
+ background-color:#f3faf8;
+ background-image:none;
+ background-position:0 0;
+ background-repeat:repeat;
+ background-attachment:scroll;
+ background-size:auto;
+ box-shadow: 0px 0px 0 0px transparent, 0px 0px 0px 0px transparent inset;
+ -moz-box-shadow: 0px 0px 0 0px transparent, 0px 0px 0px 0px transparent inset;
+ -o-box-shadow: 0px 0px 0 0px transparent, 0px 0px 0px 0px transparent inset;
+ -webkit-box-shadow: 0px 0px 0 0px transparent, 0px 0px 0px 0px transparent inset;
+ border-radius: 0;
+ -moz-border-radius:0;
+ -webkit-border-radius:0;
+ -o-border-radius:0;
+ border-width: 5px;
+ border-style:solid;
+ border-color:#ffffff;
+    margin-left: 20px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.contentArea .contentAreaSpace {
+    min-height: 500px;
+    height: auto !important;
+    height: 500px;
+}
+/*--------------------------------------------------------------- CONTENT AREA CSS -------------------------------------------------------------------------------*/
+.banner {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    overflow: hidden;
+}
+.banner img {
+    display: block;
+}
+.breadcrumb {
+    padding: 10px 0;
+    margin-bottom: 20px;
+    color: #599A88;
+}
+.breadcrumb span {
+    padding: 0 10px;
+}
+.breadcrumb p {
+    word-wrap: break-word;
+}
+.sidebarArea {
+ background-color:#d8ece5;
+ background-image:none;
+ background-position:0 0;
+ background-repeat:repeat;
+ background-attachment:scroll;
+ background-size:auto;
+ box-shadow: 0px 0px 5px 0px transparent, 0px 0px 0px 0px transparent inset;
+ -webkit-box-shadow: 0px 0px 5px 0px transparent, 0px 0px 0px 0px transparent inset;
+ -moz-box-shadow: 0px 0px 5px 0px transparent, 0px 0px 0px 0px transparent inset;
+ -o-box-shadow: 0px 0px 5px 0px transparent, 0px 0px 0px 0px transparent inset;
+ border-width: 1px;
+ border-style:solid;
+ border-color:#B6E4D4;
+ border-radius: 0px;
+ -moz-border-radius:0px;
+ -webkit-border-radius:0px;
+ -o-border-radius:0px;
+    margin-top: 20px;
+    min-height: 300px;
+    height: auto !important;
+    height: 300px;
+}
+.sidebarAreaInner {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ color:#5c5c5c;
+    padding: 10px;
+    overflow: hidden;
+}
+.sidebarAreaInner h1 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:26px;
+ color:#3c3c3c;
+}
+.sidebarAreaInner h2 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:24px;
+ color:#3c3c3c;
+}
+.sidebarAreaInner h3 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:22px;
+ color:#3c3c3c;
+}
+.sidebarAreaInner h4 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:20px;
+ color:#3c3c3c;
+}
+.sidebarAreaInner h5 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:18px;
+ color:#3c3c3c;
+}
+.sidebarAreaInner h6 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:16px;
+ color:#3c3c3c;
+}
+.sidebarAreaInner a {
+ color:#348b6e;
+ text-decoration:none;
+}
+.sidebarAreaInner a:hover {
+ text-decoration:none;
+ color:#348b6e;
+}
+.sidebarAreaInner form li span input[type=text], .sidebarAreaInner form li span textarea, .sidebarAreaInner form li span select {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ color:#5C5C5C;
+}
+.sidebarAreaInner form li input[type=submit], .sidebarAreaInner form li input[type=reset] {
+font-family:Arial, Helvetica, sans-serif;
+}
+.sidebarAreaInner form ul li label, .sidebarAreaInner form ul li div {
+    float: none;
+}
+.sidebarAreaInner form ul li label {
+    width: auto;
+    padding-right: 0px;
+    text-align: left;
+}
+.sidebarAreaInner form li span input[type=text], .sidebarAreaInner form li span textarea {
+    width: 110px;
+}
+.sidebarAreaInner form li span select {
+    width: 135px;
+}
+.sidebarAreaInner .newsletter-input-field {
+    width: 150px;
+}
+.sidebarAreaInner .newsletter-layout-3 .newsletter-form {
+    width: 150px;
+}
+.sidebarAreaInner .zs-tabs-accordion-content .newsletter-input-field {
+    width:120px;
+}
+.sidebarAreaInner .zs-tabs-accordion-content .newsletter-layout-3 .newsletter-form {
+    width: 120px;
+}
+.sidebarAreaInner th {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ background:#e8f5f1;
+ border-width:1px;
+ border-style:solid;
+ border-color:#D1EDE3;
+ color:#348b6e;
+ padding:7px;
+}
+.sidebarAreaInner td {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ background:#F3FAF8;
+ border-width:1px;
+ border-style:solid;
+ border-color:#D1EDE3;
+ color:#5c5c5c;
+ padding:6px;
+}
+/*--------------------------------------------------------------- SIDEBAR AREA HIGHLIGHT BOX CSS -------------------------------------------------------------------------------*/
+.sidebarAreaInner .zs-highlight-box {
+ background-color: #f3faf8;
+ background-image: none;
+ background-image: none, -moz-linear-gradient(top, transparent, transparent);
+ background-image: none, -webkit-linear-gradient(top, transparent, transparent);
+ background-image: none, -o-linear-gradient(top, transparent, transparent);
+ background-position: top left;
+ background-repeat: no-repeat;
+ box-shadow: 0 2px 5px 0px #cae7dd, 0px 0px 0px 0 transparent inset;
+ -moz-box-shadow: 0 2px 5px 0px #cae7dd, 0px 0px 0px 0 transparent inset;
+ -webkit-box-shadow: 0 2px 5px 0px #cae7dd, 0px 0px 0px 0 transparent inset;
+ -o-box-shadow: 0 2px 5px 0px #cae7dd, 0px 0px 0px 0 transparent inset;
+ border-width: 0;
+ border-style:none;
+ border-color:transparent;
+ border-radius: 0;
+ -moz-border-radius:0;
+ -webkit-border-radius:0;
+ -o-border-radius:0;
+ padding: 10px;
+ margin: 5px;
+    min-height: 100px;
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ color:#5c5c5c;
+}
+.sidebarAreaInner .zs-highlight-box h1 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:26px;
+ color:#3c3c3c;
+}
+.sidebarAreaInner .zs-highlight-box h2 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:24px;
+ color:#3c3c3c;
+}
+.sidebarAreaInner .zs-highlight-box h3 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:22px;
+ color:#3c3c3c;
+}
+.sidebarAreaInner .zs-highlight-box h4 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:20px;
+ color:#3c3c3c;
+}
+.sidebarAreaInner .zs-highlight-box h5 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:18px;
+ color:#3c3c3c;
+}
+.sidebarAreaInner .zs-highlight-box h6 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:16px;
+ color:#3c3c3c;
+}
+.sidebarAreaInner .zs-highlight-box a {
+ color:#348B6E;
+ text-decoration:none;
+}
+.sidebarAreaInner .zs-highlight-box a:hover {
+ color:#348B6E;
+ text-decoration:none;
+}
+.sidebarAreaInner .zs-highlight-box form li span input[type=text], .sidebarAreaInner .zs-highlight-box form li span textarea, .sidebarAreaInner .zs-highlight-box form li span select {
+    width: 65%;
+}
+.sidebarAreaInner .zs-highlight-box form li input[type=submit], .sidebarAreaInner .zs-highlight-box form li input[type=reset] {
+    padding: 6px 10px;
+    margin-right: 4px;
+}
+.sidebarAreaInner .zs-highlight-box .newsletter-input-field {
+    width: 115px;
+}
+.sidebarAreaInner .zs-highlight-box .newsletter-layout-3 .newsletter-form {
+    width: 115px;
+}
+.sidebarAreaInner .zs-highlight-box th {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ background:#e8f5f1;
+ border-width:1px;
+ border-style:solid;
+ border-color:#D1EDE3;
+ color:#348b6e;
+ padding:7px;
+}
+.sidebarAreaInner .zs-highlight-box td {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ background:#F3FAF8;
+ border-width:1px;
+ border-style:solid;
+ border-color:#D1EDE3;
+ color:#5c5c5c;
+ padding:6px;
+}
+/*----------------------------------- TEXT HIGHLIGHT CSS -----------------------------------------------*/
+.sidebarAreaInner .zs-text-light-color {
+color:#A9A9A9;
+}
+.sidebarAreaInner .zs-text-highlight-color {
+color:#3C3C3C;
+}
+.sidebarAreaInner .zs-highlight-box .zs-text-light-color {
+color:#A9A9A9;
+}
+.sidebarAreaInner .zs-highlight-box .zs-text-highlight-color {
+color:#3C3C3C;
+}
+/*--------------------- THEME SIDEBAR TABS ACCORDION AREA CSS ---------------------*/
+.sidebarAreaInner .zs-tabs ul, .sidebarAreaInner .zs-highlight-box .zs-tabs ul {
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-bottom: 3px solid #fdc555;
+    display: none;
+}
+.sidebarAreaInner .zs-tabs ul li, .sidebarAreaInner .zs-highlight-box .zs-tabs ul li {
+    float: left;
+    margin: 0;
+    padding: 0px;
+}
+.sidebarAreaInner .zs-tabs ul li div, .sidebarAreaInner .zs-highlight-box .zs-tabs ul li div {
+    padding: 0 15px;
+    position: relative;
+    color: #616363;
+    line-height: 2.8;
+    cursor: pointer;
+}
+.sidebarAreaInner .zs-tabs ul li.selected, .sidebarAreaInner .zs-highlight-box .zs-tabs ul li.selected {
+    background: #fdc555;
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+}
+.sidebarAreaInner .zs-tabs ul li.selected div, .sidebarAreaInner .zs-highlight-box .zs-tabs ul li.selected div {
+    color: #ffffff;
+}
+.sidebarAreaInner .zs-tabs-accordion-content, .sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content {
+    background: #FFFFFF;
+    font-size: 12px;
+    padding: 10px;
+    display: none;
+    color: #5c5c5c;
+    margin-bottom: 2px;
+    min-height: 70px;
+    height: auto !important;
+    height: 70px;
+}
+.sidebarAreaInner .zs-accordion, .sidebarAreaInner .zs-highlight-box .zs-accordion {
+    background: #f3faf8;
+    color: #4a6c61;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    margin-bottom: 2px;
+    border: 1px solid #b6e4d4;
+}
+.sidebarAreaInner .zs-accordion.selected, .sidebarAreaInner .zs-highlight-box .zs-accordion.selected {
+    background: #ffffff;
+    color: #4a6c61;
+    border: 0px;
+}
+/*--------------------- THEME SIDEBAR HIGHLIGHT BOX TABS ACCORDION AREA CSS ---------------------*/
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content {
+    border: 1px solid #b6e4d4;
+    padding: 10px;
+}
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content h1 {
+    color: #3c3c3c;
+}
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content h2 {
+    color: #3c3c3c;
+}
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content h3 {
+    color: #3c3c3c;
+}
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content h4 {
+    color: #3c3c3c;
+}
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content h5 {
+    color: #3c3c3c;
+}
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content h6 {
+    color: #3c3c3c;
+}
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content a {
+    color: #348B6E;
+}
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content a:hover {
+    color: #348B6E;
+}
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content hr {
+    border-top: 1px solid #B9E0D2;
+}
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content th {
+    background: #e8f5f1;
+    border: 1px solid #D1EDE3;
+    color: #348b6e;
+    padding: 7px;
+}
+.sidebarAreaInner .zs-highlight-box .zs-tabs-accordion-content td {
+    background: #F3FAF8;
+    border: 1px solid #D1EDE3;
+    color: #5c5c5c;
+    padding: 6px;
+}
+.sidebarAreaInner .zs-highlight-box .zs-accordion.selected {
+    border: 1px solid #b6e4d4;
+}
+/*----------------------------------- FOOTER AREA CSS -----------------------------------------------*/
+.footer {
+ background-color:transparent;
+ background-image:none;
+ background-position:0 0;
+ background-repeat:repeat;
+ background-attachment:scroll;
+ background-size:auto;
+ box-shadow: 0px 0px 0px 0px  transparent, 0px 0px 0px 0px transparent inset;
+-moz-box-shadow: 0px 0px 0px 0px  transparent, 0px 0px 0px 0px transparent inset;
+-webkit-box-shadow: 0px 0px 0px 0px  transparent, 0px 0px 0px 0px transparent inset;
+-o-box-shadow: 0px 0px 0px 0px  transparent, 0px 0px 0px 0px transparent inset;
+border-style:0px;
+ border-style:solid;
+ border-color:transparent;
+ border-radius: 0px;
+ -moz-border-radius:0px;
+ -webkit-border-radius:0px;
+ -o-border-radius:0px;
+    min-height: 15px;
+    height: auto !important;
+    height: 15px;
+    overflow: hidden;
+    padding: 20px 40px;
+    overflow: hidden;
+}
+.footerArea {
+    width: 750px;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size:12px;
+ color:#5c5c5c;
+}
+.footerArea h1 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:24px;
+ color:#3c3c3c;
+}
+.footerArea h2 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:22px;
+ color:#3c3c3c;
+}
+.footerArea h3 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:20px;
+ color:#3c3c3c;
+}
+.footerArea h4 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:18px;
+ color:#3c3c3c;
+}
+.footerArea h5 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:16px;
+ color:#3c3c3c;
+}
+.footerArea h6 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:14px;
+ color:#3c3c3c;
+}
+.footerArea a {
+ color:#348B6E;
+ text-decoration:none;
+}
+.footerArea a:hover {
+ text-decoration:none;
+ color:#348B6E;
+}
+.footerArea form li span input[type=text], .footerArea form li span textarea, .footerArea form li span select {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ color:#5c5c5c;
+}
+.footerArea form li input[type=submit], .footerArea form li input[type=reset] {
+font-family:Arial, Helvetica, sans-serif;
+}
+.footerArea form ul li label {
+    width: 150px;
+    padding-right: 0px;
+    text-align: left;
+}
+.footerArea form li span input[type=text], .footerArea form li span textarea {
+    width: 170px;
+}
+.footerArea form li span select {
+    width: 180px;
+}
+.footerArea hr {
+    border-top: 1px solid #B8E7D6;
+}
+.footerArea th {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ background:#e8f5f1;
+ border-width:1px;
+ border-style:solid;
+ border-color:#D1EDE3;
+ color:#348b6e;
+ padding:7px;
+}
+.footerArea td {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ background:#F3FAF8;
+ border-width:1px;
+ border-style:solid;
+ border-color:#D1EDE3;
+ color:#5c5c5c;
+ padding:6px;
+}
+/*----------------------------------- FOOTER HIGHLIGHT BOX AREA CSS -----------------------------------------------*/
+
+.footerArea .zs-highlight-box {
+ background-color: #d8ece5;
+ background-image: none;
+ background-image: none, -moz-linear-gradient(top, transparent, transparent);
+ background-image: none, -webkit-linear-gradient(top, transparent, transparent);
+ background-image: none, -o-linear-gradient(top, transparent, transparent);
+ background-position: top left;
+ background-repeat: no-repeat;
+ box-shadow: 0 2px 5px 0 #b4dacd, 0px 0px 0px 0 transparent inset;
+ -moz-box-shadow: 0 2px 5px 0 #b4dacd, 0px 0px 0px 0 transparent inset;
+ -webkit-box-shadow: 0 2px 5px 0 #b4dacd, 0px 0px 0px 0 #transparent inset;
+ -o-box-shadow: 0 2px 5px 0 #b4dacd, 0px 0px 0px 0 transparent inset;
+ border-width: 2px;
+ border-style:solid;
+ border-color:#e3f2ed;
+ border-radius: 0;
+ -moz-border-radius:0;
+ -webkit-border-radius:0;
+ -o-border-radius:0;
+ padding: 10px;
+ margin: 10px;
+    min-height: 100px;
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ color:#5c5c5c;
+}
+.footerArea .zs-highlight-box h1 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:26px;
+ color:#3c3c3c;
+}
+.footerArea .zs-highlight-box h2 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:24px;
+ color:#3c3c3c;
+}
+.footerArea .zs-highlight-box h3 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:22px;
+ color:#3c3c3c;
+}
+.footerArea .zs-highlight-box h4 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:20px;
+ color:#3c3c3c;
+}
+.footerArea .zs-highlight-box h5 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:18px;
+ color:#3c3c3c;
+}
+.footerArea .zs-highlight-box h6 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:16px;
+ color:#3c3c3c;
+}
+.footerArea .zs-highlight-box a {
+ color:#348B6E;
+ text-decoration:none;
+}
+.footerArea .zs-highlight-box a:hover {
+ color:#348B6E;
+ text-decoration:none;
+}
+.footerArea .zs-highlight-box th {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ background:#e8f5f1;
+ border-width:1px;
+ border-style:solid;
+ border-color:#D1EDE3;
+ color:#348b6e;
+ padding:7px;
+}
+.footerArea .zs-highlight-box td {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ background:#F3FAF8;
+ border-width:1px;
+ border-style:solid;
+ border-color:#D1EDE3;
+ color:#5c5c5c;
+ padding:6px;
+}
+/*----------------------------------- FOOTER TEXT HIGHLIGHT CSS -----------------------------------------------*/
+.footerArea .zs-text-light-color {
+color:#A9A9A9;
+}
+.footerArea .zs-text-highlight-color {
+color:#3C3C3C;
+}
+.footerArea .zs-highlight-box .zs-text-light-color {
+color:#A9A9A9;
+}
+.footerArea .zs-highlight-box .zs-text-highlight-color {
+color:#3C3C3C;
+}
+/*--------------------- THEME FOOTER TABS ACCORDION AREA CSS ---------------------*/
+.footerArea .zs-tabs ul, .footerArea .zs-highlight-box .zs-tabs ul {
+    list-style: none;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-bottom: 0px;
+}
+.footerArea .zs-tabs ul li, .footerArea .zs-highlight-box .zs-tabs ul li {
+    float: left;
+    margin: 0;
+    padding: 0px;
+}
+.footerArea .zs-tabs ul li div, .footerArea .zs-highlight-box .zs-tabs ul li div {
+    padding: 0 20px;
+    position: relative;
+    color: #4a6c61;
+    line-height: 2.8;
+    cursor: pointer;
+}
+.footerArea .zs-tabs ul li.selected, .footerArea .zs-highlight-box .zs-tabs ul li.selected {
+    background: #ffffff;
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+    border-bottom: 0px;
+}
+.footerArea .zs-tabs ul li.selected div, .footerArea .zs-highlight-box .zs-tabs ul li.selected div {
+    color: #4a6c61;
+}
+.footerArea .zs-tabs-accordion-content, .footerArea .zs-highlight-box .zs-tabs-accordion-content {
+    background: #fffffff;
+    font-size: 12px;
+    padding: 15px;
+    display: none;
+    margin-bottom: 2px;
+    min-height: 70px;
+    height: auto !important;
+    height: 70px;
+}
+.footerArea .zs-accordion, .footerArea .zs-highlight-box .zs-accordion {
+    background: #d8ece5;
+    color: #4a6c61;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+    position: relative;
+    margin-bottom: 2px;
+    border: 1px solid #b6e4d4;
+}
+.footerArea .zs-accordion.selected, .footerArea .zs-highlight-box .zs-accordion.selected {
+    background: #ffffff;
+    color: #4a6c61;
+    border: 0px;
+}
+/*--------------------- THEME FOOTER HIGHLIGHT BOX TABS ACCORDION AREA CSS ---------------------*/
+.footerArea .zs-highlight-box .zs-tabs-accordion-content h1 {
+    color: #3c3c3c;
+}
+.footerArea .zs-highlight-box .zs-tabs-accordion-content h2 {
+    color: #3c3c3c;
+}
+.footerArea .zs-highlight-box .zs-tabs-accordion-content h3 {
+    color: #3c3c3c;
+}
+.footerArea .zs-highlight-box .zs-tabs-accordion-content h4 {
+    color: #3c3c3c;
+}
+.footerArea .zs-highlight-box .zs-tabs-accordion-content h5 {
+    color: #3c3c3c;
+}
+.footerArea .zs-highlight-box .zs-tabs-accordion-content h6 {
+    color: #3c3c3c;
+}
+.footerArea .zs-highlight-box .zs-tabs-accordion-content a {
+    color: #348B6E;
+}
+.footerArea .zs-highlight-box .zs-tabs-accordion-content a:hover {
+    color: #348B6E;
+}
+.footerArea .zs-highlight-box .zs-tabs-accordion-content hr {
+    border-top: 1px solid #B9E0D2;
+}
+.footerArea .zs-highlight-box .zs-tabs-accordion-content th {
+    background: #e8f5f1;
+    border: 1px solid #D1EDE3;
+    color: #348b6e;
+    padding: 7px;
+}
+.footerArea .zs-highlight-box .zs-tabs-accordion-content td {
+    background: #F3FAF8;
+    border: 1px solid #D1EDE3;
+    color: #5c5c5c;
+    padding: 6px;
+}
+/*--------------------------------------------------------------- FORM AREA CSS -------------------------------------------------------------------------------*/
+form ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-image: none;
+}
+form li {
+    overflow: hidden;
+    padding: 10px 0 0;
+    margin: 0;
+}
+form ul li label, form ul li div {
+    width: auto;
+    float: left;
+    padding: 5px 0 0;
+    color: #393333
+}
+form ul li label {
+    width: 225px;
+    padding: 10px 30px 0 0;
+    margin: 0px;
+    text-align: right;
+}
+form li span input, form li span label {
+    float: none;
+    width: auto;
+    margin-top: 7px;
+    padding: 2px 5px 0;
+}
+form ul li div span {
+    display: block;
+}
+form li span input[type=text], form li span textarea, form li span select {
+ font-family:Arial, Helvetica, sans-serif;
+ color:#5c5c5c;
+ font-size:12px;
+    width: 225px;
+    background: #f3faf8;
+    border: 1px solid #B3E1D1;
+    float: left;
+    padding: 8px;
+    resize: none;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    margin: 0px;
+}
+form li span select {
+    width: 238px;
+}
+form li span textarea {
+    height: 100px;
+    overflow: auto;
+}
+form li span button {
+    margin-left: 5px;
+    cursor: pointer;
+}
+form .dateinvoker {
+    background: url(images/datePickerIcn.png) 0 0 no-repeat;
+    height: 20px;
+    border: none;
+    vertical-align: middle;
+    margin-top: 8px;
+    outline: none;
+    width: 16px;
+    padding: 0px;
+}
+form li input[type=submit], form li input[type=reset], button {
+ font-family:Arial, Helvetica, sans-serif;
+    border: 1px solid #95D0BC;
+    background: #B1E4D2;
+    padding: 6px 15px;
+    margin-right: 5px;
+    color: #2F594C;
+    cursor: pointer;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+form li input[type=reset] {
+    background: #fff;
+    border: 1px solid #8ED2BA;
+    color: #5CA08B;
+    font-weight: normal;
+}
+/*--------------------------------------------------------------- THEME SEARCH BOX AREA CSS -------------------------------------------------------------------------------*/
+.searchContainer {
+    margin: 10px 0;
+}
+.searchbox {
+    width: 190px;
+    height: 28px;
+    position: relative;
+    border: 1px solid #c1d9d0;
+    background: #f3faf8;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.searchbox input[type=text] {
+    background: transparent;
+    width: 155px;
+    height: 28px;
+    border: 0;
+    outline: none;
+    line-height: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #5c5c5c;
+    padding: 0 5px
+}
+.searchbox input[type=submit] {
+    background: url(images/searchicon.png) center center no-repeat #b6d2c9;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    width: 25px;
+    height: 26px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    border: 0 none;
+    cursor: pointer;
+}
+/* ------------------------------------------------------------- SLIDESHOW AREA CSS ---------------------------------------------------------------------------*/
+.zs-slideshow-left-arrow {
+    background: url(images/zs-slideshow-left-arrow.png) left top no-repeat;
+    cursor: pointer;
+    height: 38px;
+    left: 0;
+    margin-tp: -19px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transition: opacity 500ms ease 0s;
+    -webkit-transition: opacity 500ms ease 0s;
+    -moz-transition: opacity 500ms ease 0s;
+    -o-transition: opacity 500ms ease 0s;
+    width: 31px;
+    z-index: 150;
+}
+.zs-slideshow-right-arrow {
+    background: url(images/zs-slideshow-right-arrow.png) left top no-repeat;
+    cursor: pointer;
+    height: 38px;
+    right: 0px;
+    margin-top: -19px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transition: opacity 500ms ease 0s;
+    -webkit-transition: opacity 500ms ease 0s;
+    -moz-transition: opacity 500ms ease 0s;
+    -o-transition: opacity 500ms ease 0s;
+    width: 31px;
+    z-index: 150;
+    left: auto;
+}
+.themeSlideshowOuterContainer {
+    bottom: 0;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 500ms ease 0s;
+    z-index: 150;
+}
+.themeSlideshowInnerContainer {
+    background: transparent;
+    border-radius: 0;
+    padding: 0px 10px 6px;
+    float: right;
+}
+.zs-slideshow-control-active {
+    background: url(images/zs-slideshow-control-active.png) no-repeat left top;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    margin: 0 0 0 7px;
+    width: 10px;
+}
+.zs-slideshow-control {
+    background: url(images/zs-slideshow-control.png) no-repeat left top;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    margin: 0 0 0 7px;
+    width: 10px;
+}
+/*----------------------------------- HIGHLIGHT BOX AREA CSS -----------------------------------------------*/
+.zs-highlight-box {
+ background-color: #d8ece5;
+ background-image: none;
+ background-image: none, -moz-linear-gradient(top, transparent, transparent);
+ background-image: none, -webkit-linear-gradient(top, transparent, transparent);
+ background-image: none, -o-linear-gradient(top, transparent, transparent);
+ background-position: top left;
+ background-repeat: no-repeat;
+ box-shadow: 0px 0px 0 0px transparent, 0px 1px 0px 0 #f7fbfa inset;
+ -moz-box-shadow: 0px 0px 0 0px transparent, 0px 1px 0px 0 #f7fbfa inset;
+ -webkit-box-shadow: 0px 0px 0 0px transparent, 0px 1px 0px 0 #f7fbfa inset;
+ -o-box-shadow: 0px 0px 0 0px transparent, 0px 1px 0px 0 #f7fbfa inset;
+ border-width: 1px;
+ border-style:solid;
+ border-color:#c8e5dc;
+ border-radius: 0;
+ -moz-border-radius:0;
+ -webkit-border-radius:0;
+ -o-border-radius:0;
+ padding: 10px;
+ margin: 0;
+    min-height: 100px;
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ color:#5c5c5c;
+}
+.zs-highlight-box h1 {
+font-family:Arial, Helvetica, sans-serif;
+font-size:26px;
+color:#3c3c3c;
+}
+.zs-highlight-box h2 {
+font-family:Arial, Helvetica, sans-serif;
+font-size:24px;
+color:#3c3c3c;
+}
+.zs-highlight-box h3 {
+font-family:Arial, Helvetica, sans-serif;
+font-size:22px;
+color:#3c3c3c;
+}
+.zs-highlight-box h4 {
+font-family:Arial, Helvetica, sans-serif;
+font-size:20px;
+color:#3c3c3c;
+}
+.zs-highlight-box h5 {
+font-family:Arial, Helvetica, sans-serif;
+font-size:18px;
+color:#3c3c3c;
+}
+.zs-highlight-box h6 {
+font-family:Arial, Helvetica, sans-serif;
+font-size:16px;
+color:#3c3c3c;
+}
+.zs-highlight-box a {
+ text-decoration:underline;
+ color:#348b6e;
+}
+.zs-highlight-box a:hover {
+text-decoration:none;
+color:#348b6e;
+}
+.zs-highlight-box hr {
+    border-top: 1px solid #B9E0D2;
+}
+.zs-highlight-box th {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ background:#e8f5f1;
+ border-width:1px;
+ border-style:solid;
+ border-color:#D1EDE3;
+ color:#348b6e;
+ padding:7px;
+}
+.zs-highlight-box td {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ background:#F3FAF8;
+ border-width:1px;
+ border-style:solid;
+ border-color:#D1EDE3;
+ color:#5c5c5c;
+ padding:6px;
+}
+/*----------------------------------- TEXT HIGHLIGHT CSS -----------------------------------------------*/
+.zs-text-light-color {
+color:#A9A9A9;
+}
+.zs-text-highlight-color {
+color:#3C3C3C;
+}
+.zs-highlight-box .zs-text-light-color {
+color:#A9A9A9;
+}
+.zs-highlight-box .zs-text-highlight-color {
+color:#3C3C3C;
+}
+/*--------------------- THEME TABS ACCORDION AREA CSS ---------------------*/
+.zs-tabs ul, .zs-highlight-box .zs-tabs ul {
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-bottom: 3px solid #d8ece5;
+}
+.zs-tabs ul li, .zs-highlight-box .zs-tabs ul li {
+    float: left;
+    margin: 0;
+    padding: 0px;
+}
+.zs-tabs ul li div, .zs-highlight-box .zs-tabs ul li div {
+    padding: 0 20px;
+    position: relative;
+    color: #4a6c61;
+    line-height: 2.8;
+    cursor: pointer;
+}
+.zs-tabs ul li.selected, .zs-highlight-box .zs-tabs ul li.selected {
+    background: #d8ece5;
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+}
+.zs-tabs-accordion-content, .zs-highlight-box .zs-tabs-accordion-content {
+    background: #ffffff;
+    font-size: 12px;
+    padding: 15px;
+    display: none;
+    color: #5c5c5c;
+    margin-bottom: 2px;
+    min-height: 70px;
+    height: auto !important;
+    height: 70px;
+}
+.zs-accordion, .zs-highlight-box .zs-accordion {
+    background: #d8ece5;
+    color: #4a6c61;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+    position: relative;
+    margin-bottom: 2px;
+    border: 1px solid #b6e4d4;
+}
+.zs-accordion.selected, .zs-highlight-box .zs-accordion.selected {
+    background: #ffffff;
+    color: #4a6c61;
+    border: 0px;
+}
+/*--------------------- THEME HIGHLIGHT BOX TABS ACCORDION AREA CSS ---------------------*/
+.zs-highlight-box .zs-tabs ul {
+    border-bottom: 3px solid #ffffff;
+}
+.zs-highlight-box .zs-tabs ul li.selected {
+    background: #ffffff;
+}
+.zs-highlight-box .zs-tabs-accordion-content h1, .zs-highlight-box .zs-tabs-accordion-content h2, .zs-highlight-box .zs-tabs-accordion-content h3, .zs-highlight-box .zs-tabs-accordion-content h4, .zs-highlight-box .zs-tabs-accordion-content h5, .zs-highlight-box .zs-tabs-accordion-content h6 {
+    color: #3c3c3c;
+}
+.zs-highlight-box .zs-tabs-accordion-content a, .zs-highlight-box .zs-tabs-accordion-content a:hover {
+    color: #348b6e;
+}
+.zs-highlight-box .zs-tabs-accordion-content hr {
+    border-top: 1px solid #B9E0D2;
+}
+.zs-highlight-box .zs-tabs-accordion-content th {
+    background: #e8f5f1;
+    border: 1px solid #D1EDE3;
+    color: #348b6e;
+    padding: 7px;
+}
+.zs-highlight-box .zs-tabs-accordion-content td {
+    background: #F3FAF8;
+    border: 1px solid #D1EDE3;
+    color: #5c5c5c;
+    padding: 6px;
+}
+/*----------------------------------- START SOCIAL ICONS SPRITE -----------------------------------*/
+.socialiconContainer {
+    text-align: center;
+    padding: 10px 0 15px;
+}
+.zs-socialicon-email, .zs-socialicon-facebook, .zs-socialicon-flickr, .zs-socialicon-googleplus, .zs-socialicon-linkedin, .zs-socialicon-pinterest, .zs-socialicon-rss, .zs-socialicon-twitter, .zs-socialicon-youtube, .zs-socialicon-medium, .zs-socialicon-instagram {
+    background: url(images/zs-socialicon-sprite.png) no-repeat left top;
+    width: 20px;
+    height: 20px;
+    margin: 0 3px;
+    display: inline-block;
+}
+.zs-socialicon-email {
+    background-position: 0 -0px;
+}
+.zs-socialicon-facebook {
+    background-position: 0 -20px;
+}
+.zs-socialicon-flickr {
+    background-position: 0 -40px;
+}
+.zs-socialicon-googleplus {
+    background-position: 0 -60px;
+}
+.zs-socialicon-linkedin {
+    background-position: 0 -80px;
+}
+.zs-socialicon-pinterest {
+    background-position: 0 -100px;
+}
+.zs-socialicon-rss {
+    background-position: 0 -120px;
+}
+.zs-socialicon-twitter {
+    background-position: 0 -140px;
+}
+.zs-socialicon-youtube {
+    background-position: 0 -160px;
+}
+.zs-socialicon-medium {
+    background-position: 0 -180px;
+}
+.zs-socialicon-instagram {
+    background-position: 0 -200px;
+}
+/*----------------------------------- NEWSLETTER AREA CSS -----------------------------------------------*/
+.newsletter-container {
+background: transparent;
+    padding: 10px
+}
+h3.newsletter-heading {
+    margin-bottom: 10px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 22px;
+color: #3c3c3c;
+}
+.newsletter-desc {
+    margin-bottom: 20px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+color: #5c5c5c;
+}
+.newsletter-input-field {
+background: #ffffff;
+border-width: 1px;
+border-color: #cbcbcb;
+color:#5c5c5c;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+    border-style: solid;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    width: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    vertical-align:top;
+}
+button.newsletter-button {
+background: #b1e4d2;
+border-width: 1px;
+border-color: #95d0bc;
+color:#2f594c;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-style: solid;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: 400;
+    box-sizing: border-box;
+    margin-right: 0;
+}
+.newsletter-layout-1 .newsletter-form, .newsletter-layout-2 .newsletter-form {
+    margin: 0 auto;
+    text-align: center;
+}
+.newsletter-layout-3 .newsletter-form {
+    width: 200px;
+    margin: 0 auto;
+    text-align: right;
+}
+.newsletter-layout-3 button {
+    text-align: right;
+}
+.newsletter-form input[type="text"]::-moz-placeholder {
+    color:#A1A1A1;
+  font-size:90%;
+  line-height:normal;
+}
+.newsletter-form  input[type="text"]::-webkit-input-placeholder {
+    color:#A1A1A1;
+  font-size:85%;
+  line-height:normal;
+}
+.newsletter-form  input[type="text"]:-ms-input-placeholder {
+    color:#A1A1A1;
+  font-size:90%;
+  line-height:normal;
+}
+
+/*--------------------- THEME MEMBERSHIP PORTAL AREA CSS ---------------------*/
+.mp-container {
+    height: 34px;
+    background:#deefe9;
+    border-bottom:1px solid #c0e8dd;
+    margin-bottom:15px;
+}
+.member-signin {
+    float: right;
+}
+.member-signin > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.member-signin li {
+    display: inline-block;
+    line-height: 34px;
+    margin-left: 20px;
+    padding: 0;
+    position:relative;
+}
+.member-signin li a {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    text-decoration:none;
+    color:#348b6e;
+    display:block;
+}
+.member-signin li a:hover {
+    text-decoration:none;
+    color:#348b6e;
+}
+.member-signin li:first-child {
+    margin-left: 0;
+}
+.member-signin li:last-child:before {
+    color:#348b6e;
+    content: "|";
+    position: absolute;
+    top: 0;
+    left:-10px;
+} 
