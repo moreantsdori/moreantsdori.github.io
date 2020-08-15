@@ -176,20 +176,13 @@ var ZS_ColumnFix=false;var responsiveTheme=false;var ZS_FormAppName="moreants-37
                           </ul>
                         </form>
                       </div>
-                      <script>
-                      var message = "";
-
-                      $("#sendMessage").on("click", function() {
-                          message = $("#contactform").serialize();
-                          $.ajax({
-                              url: "//formspree.io/Mark@moreants.com",
-                              method: "POST",
-                              data: {message: message},
-                              dataType: "json"
-                          });
-                          alert('Thanks for the email, we will forward your inquiry.');
-                          return false;
+                      <script type="text/javascript">var submitted=false;</script>
+                      <script type="text/javascript">
+                      $("#Contact_Us").on("submit", function(e) {
+                      $("#Contact_Us *").fadeOut(1500);
+                      $("#Contact_Us").prepend("Thank you, we will forward your inquiry.");
                       });
+                      </script>
                       </script>
                     </div>
                 </div>
