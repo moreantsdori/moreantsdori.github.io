@@ -110,7 +110,7 @@ var ZS_ColumnFix=false;var responsiveTheme=false;var ZS_FormAppName="moreants-37
                 <div id="elm_ANpp64gjSiqpAqfgzRbsnw" class="zpelement-wrapper form" name="form">
                     <div class="zpAlignPos" id="zpform_Contact_Us" formid="37889497-Contact_Us">
                       <div>
-                        <form elname="Contact_Us" name="Contact_Us" action="https://formspree.io/mqkyjoyw" onsubmit="fnFormSubmit(this)" method="post" style="visibility: visible;">
+                        <form elname="Contact_Us" name="Contact_Us" action="/siteforms/addRecordValidate.do" onsubmit="fnFormSubmit(this)" method="post" style="visibility: visible;">
                           <input type="hidden" name="formLinkName" value="Contact_Us">
                           <input type="hidden" name="recType" value="1">
                           <input type="hidden" name="formid" value="1966833000000011091">
@@ -119,7 +119,7 @@ var ZS_ColumnFix=false;var responsiveTheme=false;var ZS_FormAppName="moreants-37
                           <input type="hidden" name="appLinkName" value="zsa-37889497">
                           <input type="hidden" name="sharedBy" value="37889497">
                           <input type="hidden" name="dateFormat" value="dd-MMM-yyyy">
-                          <input type="hidden" name="timeZone" value="America/Detroit">
+                          <input type="hidden" name="timeZone" value="America/Los_Angeles">
                           <input type="hidden" name="cdigest" elname="zc-captcha-digest" value="">
                           <h2 class="frmname">Or send me this form:</h2>
                           <ul>
@@ -176,20 +176,7 @@ var ZS_ColumnFix=false;var responsiveTheme=false;var ZS_FormAppName="moreants-37
                           </ul>
                         </form>
                       </div>
-                      <script>
-                      var message = "";
-
-                      $("#sendMessage").on("click", function() {
-                          message = $("#contactform").serialize();
-                          $.ajax({
-                              url: "//formspree.io/Mark@moreants.com",
-                              method: "POST",
-                              data: {message: message},
-                              dataType: "json"
-                          });
-                          alert('Thanks for the email, we will forward your inquiry.');
-                          return false;
-                      });
+                      <script>i18n["selectOption"] ="Select";i18n["invalidmsg"]="Invalid entries found, please correct and resubmit.";i18n["pleasewait"]="Please Wait";ZCForm.inZohoCreator = false;var onLoadExist = false;var appLinkName = "zsa-37889497";var formLinkName = "Contact_Us";var formDispName = "Or send me this form:";var formAccessType = 1;var formID = 1;ZCForm.zcFormAttributes['genScriptURL'] = "/siteforms/generateJS.do";ZCForm.zcFormAttributes['formParentDiv'] = false;ZCForm.zcFormAttributes['customCalendar'] = true;ZCForm.zcFormAttributes['browseralert'] = false;ZCForm.zcFormAttributes['ajaxreload'] = true;ZCForm.zcFormAttributes['fieldContainer'] = "div";   ZCForm.zcFormAttributes['eleErrTemplate'] = "<div tag='eleErr'> insertMessage </div>"; var paramsMapString = "formID=" + formID + ",appLinkName=" + appLinkName + ",formDispName="+ formDispName + ",formAccessType=1,formLinkName="+formLinkName; ZCForm.addToFormArr(paramsMapString, formLinkName);if(onLoadExist){doActionOnLoad(formID, ZCForm.getForm(formLinkName, formAccessType)); } else { ZCForm.enableForm(formLinkName,formAccessType); } ZCForm.regFormEvents("formLinkName","formAccessType");
                       </script>
                     </div>
                 </div>
