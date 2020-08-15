@@ -108,7 +108,7 @@ var ZS_ColumnFix=false;var responsiveTheme=false;var ZS_FormAppName="moreants-37
                 <div id="elm_ANpp64gjSiqpAqfgzRbsnw" class="zpelement-wrapper form" name="form">
                     <div class="zpAlignPos" id="zpform_Contact_Us" formid="37889497-Contact_Us">
                       <div>
-                        <form elname="Contact_Us" name="Contact_Us" action="https://formspree.io/mqkyjoyw" method="post" style="visibility: visible;">
+                        <form elname="Contact_Us" name="Contact_Us" action="https://formspree.io/mqkyjoyw" method="post">
                           <input type="hidden" name="_next" value="https://moreantsdori.github.io/ThankYou.html" />
                           <input type="hidden" name="formLinkName" value="Contact_Us" />
                           <h2 class="frmname">Or send me this form:</h2>
@@ -117,7 +117,7 @@ var ZS_ColumnFix=false;var responsiveTheme=false;var ZS_FormAppName="moreants-37
                               <label>Name</label>
                               <div>
                                 <span>
-                                  <input formcompid="1966833000000011135" onchangeexists="" name="Name" fieldtype="1" delugetype="STRING" type="text" value="" maxlength="255">
+                                  <input name="Name" type="text" maxlength="255" />
                                 </span>
                               </div>
                             </li>
@@ -125,7 +125,7 @@ var ZS_ColumnFix=false;var responsiveTheme=false;var ZS_FormAppName="moreants-37
                               <label>Email Address</label>
                               <div>
                                 <span>
-                                  <input formcompid="1966833000000011139" onchangeexists="" name="Email_Id" fieldtype="4" delugetype="STRING" type="text" value="" maxlength="255">
+                                  <input name="Email_Id" type="text" maxlength="255" />
                                 </span>
                               </div>
                             </li>
@@ -133,7 +133,7 @@ var ZS_ColumnFix=false;var responsiveTheme=false;var ZS_FormAppName="moreants-37
                               <label>Phone Number (optional)</label>
                               <div>
                                 <span>
-                                  <input formcompid="1966833000000011143" onchangeexists="" name="Phone_Number" fieldtype="5" delugetype="5" type="text" value="" maxlength="20">
+                                  <input name="Phone_Number" type="text" maxlength="20" />
                                 </span>
                               </div>
                             </li>
@@ -141,7 +141,7 @@ var ZS_ColumnFix=false;var responsiveTheme=false;var ZS_FormAppName="moreants-37
                               <label>Subject</label>
                               <div>
                                 <span>
-                                  <input formcompid="1966833000000013034" onchangeexists="" name="Subject_field" fieldtype="1" delugetype="STRING" type="text" value="" maxlength="255">
+                                  <input name="Subject_field" type="text" maxlength="255" />
                                 </span>
                               </div>
                             </li>
@@ -149,7 +149,7 @@ var ZS_ColumnFix=false;var responsiveTheme=false;var ZS_FormAppName="moreants-37
                               <label>Message</label>
                               <div>
                                 <span>
-                                  <textarea name="Message" formcompid="1966833000000011147" onchangeexists="" fieldtype="3" delugetype="STRING"></textarea>
+                                  <textarea name="Message" rows="10"</textarea>
                                 </span>
                               </div>
                             </li>
@@ -165,12 +165,6 @@ var ZS_ColumnFix=false;var responsiveTheme=false;var ZS_FormAppName="moreants-37
                             </li>
                           </ul>
                         </form>
-                        <script type="text/javascript"> $("Contact_Us").on('click', '#submit', function(evt){
-                                evt.preventDefault();
-                                $("Contact_Us" *).fadeOut(1500);
-                                $("Contact_Us").prepend("Thank you!");
-                              });
-                        </script>
                       </div>
                     </div>
                 </div>
