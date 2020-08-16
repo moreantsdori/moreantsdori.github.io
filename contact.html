@@ -37,11 +37,9 @@ var ZS_ColumnFix=false;var responsiveTheme=false;var ZS_FormAppName="moreants-37
 <script src="/siteforms/appcreator/live/common/js/searchableInput.js"></script>
 <script src="/siteforms/appcreator/live/common/js/app.js"></script>
 <script src="/siteforms/appcreator/live/common/js/securityutil.js"></script>
-<script>
-  $("#contactForm").on("submit", function(evt) {
-  alert("Thank you! We will forward your inquiry.");
-  });
-</script>
+<script>var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location="https://moreantsdori.github.io/ThankYou.html";}"></iframe>
+
 </head>
 <body style="">
 
@@ -113,7 +111,7 @@ var ZS_ColumnFix=false;var responsiveTheme=false;var ZS_FormAppName="moreants-37
                 <div id="elm_ANpp64gjSiqpAqfgzRbsnw" class="zpelement-wrapper form" name="form">
                     <div class="zpAlignPos" id="zpform_Contact_Us">
                       <div>
-                        <form name="Contact_Us" id="contactForm" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScmvOyvEqdOqBZZ-6HeIHowladB4RGX-76t6NZYOn3-swPdrw/formResponse?" >
+                        <form name="Contact_Us" id="contactForm" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScmvOyvEqdOqBZZ-6HeIHowladB4RGX-76t6NZYOn3-swPdrw/formResponse?" method="post" target="hidden_iframe" onsubmit="submitted=true;">
                           <h2 class="frmname">Or send me this form:</h2>
                           <ul>
                             <li id="Contact_Us-Name-1">
