@@ -37,6 +37,13 @@ var ZS_ColumnFix=false;var responsiveTheme=false;var ZS_FormAppName="moreants-37
 <script src="/siteforms/appcreator/live/common/js/searchableInput.js"></script>
 <script src="/siteforms/appcreator/live/common/js/app.js"></script>
 <script src="/siteforms/appcreator/live/common/js/securityutil.js"></script>
+<script>var submitted=false;</script>
+<script>
+  $("#contactForm").on("submit", function(evt) {
+  $("#contactForm *").fadeOut(1600);
+  $("#contactForm").prepend("Thank you! We will forward your inquiry.");
+  });
+</script>
 </head>
 <body style="">
 
@@ -108,34 +115,28 @@ var ZS_ColumnFix=false;var responsiveTheme=false;var ZS_FormAppName="moreants-37
                 <div id="elm_ANpp64gjSiqpAqfgzRbsnw" class="zpelement-wrapper form" name="form">
                     <div class="zpAlignPos" id="zpform_Contact_Us">
                       <div>
-                        <form name="Contact_Us" action="https://formspree.io/mqkyjoyw" method="POST">
-                          <input type="hidden" name="_next" value="https://moreantsdori.github.io/ThankYou.html" />
+                        <form name="Contact_Us" id="contactForm" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScmvOyvEqdOqBZZ-6HeIHowladB4RGX-76t6NZYOn3-swPdrw/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
                           <h2 class="frmname">Or send me this form:</h2>
                           <ul>
                             <li id="Contact_Us-Name-1">
                               <label>Name</label>
-                              <input name="Name" type="text" maxlength="255" />
+                              <input name="entry.1738265837" id="entry.1738265837" />
                             </li>
                             <li id="Contact_Us-Email_Id-1">
                               <label>Email Address</label>
-                              <input name="Email_Id" type="text" maxlength="255" />
+                              <input name="entry.1880958478" id="entry.1880958478" />
                             </li>
                             <li id="Contact_Us-Phone_Number-1">
                               <label>Phone Number (optional)</label>
-                              <input name="Phone_Number" type="text" maxlength="20" />
+                              <input name="entry.1424795009" id="entry.1424795009" />
                             </li>
                             <li id="Contact_Us-Subject_field-1">
                               <label>Subject</label>
-                              <input name="Subject_field" type="text" maxlength="255" />
+                              <input name="entry.712323960" id="entry.712323960" />
                             </li>
                             <li id="Contact_Us-Message-1">
                               <label>Message</label>
-                              <textarea name="Message" ></textarea>
-                            </li>
-                            <li>
-                              <input type="text" name="_gotcha" style="display:none;" />
-                              <input type="hidden" name="_subject" value="Marantz vintage parts inquiry" />
-                              <input type="hidden" name="_next" value="https://moreantsdori.github.io/ThankYou.html" />
+                              <input name="entry.1344347411" id="entry.1344347411" />
                             </li>
                             <li>
                               <label>&nbsp;</label>
@@ -146,6 +147,7 @@ var ZS_ColumnFix=false;var responsiveTheme=false;var ZS_FormAppName="moreants-37
                             </li>
                           </ul>
                         </form>
+                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
                       </div>
                     </div>
                 </div>
