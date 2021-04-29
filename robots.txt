@@ -1,4 +1,1 @@
-User-agent: Google
-Disallow: 
-User-agent: * 
-Disallow: /mobile/
+User-agent: * Disallow: 
