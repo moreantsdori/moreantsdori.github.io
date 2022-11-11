@@ -124,7 +124,7 @@ getElementsByClassName_ieFix = function(context, search){
 
 if(typeof String.prototype.trim !== "function"){
     String.prototype.trim = function() {
-        return this.replace(/^\s+|\s+$/g, ''); 
+        return this.replace(/^\s+|\s+$/g, '');
     }
 }
 
@@ -357,7 +357,7 @@ onloadFunction = function() {
                 iframes[i].width="100%";
                 iframes[i].height=iframes[i].clientWidth/aspect_ratio;
               }
-         }   
+         }
     }
     getPortalUserName();
     if(document.getElementById('nav-top')){
@@ -422,8 +422,8 @@ onloadFunction = function() {
     else if(!document.querySelectorAll){
         getElementsByName_iefix('div','gallery');//NO I18N
     }
-    
-    
+
+
     albumCount.reverse();
     galleryElements.reverse();
     if(albumCount.length>0){
@@ -546,7 +546,7 @@ onloadFunction = function() {
 
     if(commentBoxElm.length > 0){
         renderCBRateSVG();
-        
+
     }
 
 //  table element - start
@@ -716,7 +716,7 @@ getPortalUserName = function(){
             }
             xmlhttp.onreadystatechange = function(){
                 if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
-                    var dispName = this.responseText; 
+                    var dispName = this.responseText;
                     var showDiv,otherDiv;
                     if(dispName.indexOf("null")!=-1){
                         showDiv = document.getElementById("zpPortalSignIn");
@@ -730,9 +730,9 @@ getPortalUserName = function(){
                         document.getElementById("zpLogout").href = "/signout?logout=true&serviceurl="+encodeURIComponent(document.location.protocol + "//" + document.location.host); //NO I18N
                         otherDiv = document.getElementById("zpPortalSignIn");
                     }
-                    showDiv.style.display="block";     
-                    otherDiv.style.display="none";     
-                }            
+                    showDiv.style.display="block";
+                    otherDiv.style.display="none";
+                }
 
             }
             xmlhttp.open("GET", "/getCurrentPortalUser", false);
@@ -1023,7 +1023,7 @@ addPostComments = function(){
                 errorMsg.innerHTML = "";
             },5000)
             return false;
-        }    
+        }
     }
     var paramsdata = "authorName="+encodeURIComponent(authorName)+"&authorMailId="+authorMailId+"&comments="+encodeURIComponent(comments);//No I18N
     var ie = /*@cc_on!@*/false;
@@ -1680,13 +1680,13 @@ addCBComments = function(arg)
     var comments = document.getElementById("cbComment"+cbElm).value;
 
     var cbMsg = document.getElementById("cbInfoMsg-"+cbElm);
-    
+
     var rFlg = false;
     var rCont = document.getElementById("cbRatingContainer-"+cbElm);
     if(rCont) {
         rFlg = rCont.hasAttribute("curRating"); //No I18N
     }
-    
+
     if((cbDet.CBVisible == "1" && cbDet.RatingVisible == "1") && (comments == "" && !rFlg)) {
         cbMsg.innerHTML="Provide either rating or comment or both to submit the data.";//No I18N
         setTimeout(function() {
@@ -1717,7 +1717,7 @@ addCBComments = function(arg)
     if(path.indexOf("siteapps/protected/") != -1) {
       path = path.replace("siteapps/protected/","");
     }
-    
+
     var paramsdata = "cbName="+encodeURIComponent(cbName);  //No I18N
     var voteVal;
     if(cbDet.CBVisible == "1" && cbDet.RatingVisible == "1") {
@@ -1727,15 +1727,15 @@ addCBComments = function(arg)
             rCont.removeAttribute("curRating");
         }
     }
-    
+
         setBrowserCookie();
 //    if(comments == "" && rFlg) {
 //        setBrowserCookie();
 //    }
-    
+
     var randVal = getBrowserCookie();
     var paramsdata = paramsdata + "&cbEmailid="+cbEmail+"&comments="+encodeURIComponent(comments)+"&path="+path+"&randVal="+randVal;//No I18N
-    
+
     var ie = /*@cc_on!@*/false;
     if(!ie){
         xml("POST","/siteapps/commentbox/addCBComment",addCBCommentCallback,paramsdata);//No I18N
@@ -1758,21 +1758,21 @@ cbFormReset = function(arg) {
 addCBCommentCallback = function(res){
     if(res == "-1") {
         alert("Problem while submitting. Please reload the page");
-        
+
         document.getElementById("cbName"+cbElm).value="";
         document.getElementById("cbEmail"+cbElm).value="";
         document.getElementById("cbComment"+cbElm).value="";
-        
+
         var rCont = document.getElementById("cbRatingContainer-"+cbElm);
         if(rCont.hasAttribute("curRating")) {
             rCont.removeAttribute("curRating");
         }
-        
+
         return false;
     }
-    
+
     var result=JSON.parse(res);
-    
+
     document.getElementById("cbName"+cbElm).value="";
     document.getElementById("cbEmail"+cbElm).value="";
     document.getElementById("cbComment"+cbElm).value="";
@@ -1783,7 +1783,7 @@ addCBCommentCallback = function(res){
     var cbComm = result.CB_COMMENTS_CONTENT;
 
     var commExist = (typeof cbComm != 'undefined' && cbComm != "") ? true : false;
-    
+
     if(commExist) {
         commentsArr.unshift(result);
     }
@@ -1886,9 +1886,9 @@ cbCBCommentHTML = function(res, arg, elm){
         pEl1.className="zs-text-highlight-color";
         pEl1.appendChild(document.createTextNode(result.CB_COMMENTS_ADDED_BY));
         nDivElm.appendChild(pEl1);
-        d1.appendChild(nDivElm);       
-    }                     
-    else {                
+        d1.appendChild(nDivElm);
+    }
+    else {
         d1.innerHTML=cmtRateRes;
     }
     newElem.appendChild(d1);
@@ -1898,7 +1898,7 @@ cbCBCommentHTML = function(res, arg, elm){
     spElem.style.marginTop = "3px"; //No I18N
     spElem.style.display="block";
     spElem.innerHTML="Posted on : "+result.CB_COMMENTS_ADDED_TIME;  //No I18N
-    
+
     var d2 = document.createElement("div");
     var pElem = document.createElement("p");
     pElem.className="commentTxtStyle";
@@ -1926,7 +1926,7 @@ renderCBRateSVGRes = function(res1) {
     div.innerHTML = res1;
     div.style.display="none";
     document.body.insertBefore(div, document.body.childNodes[0]);
-      
+
     loadCBComments();
 }
 
@@ -1972,17 +1972,17 @@ loadCBCommentCallback = function(res)
         var cbRatingHTML = cbRatingHTMLOrg = resp.CB_RATING_HTML;
         var cbRatingHTMLBot = resp.CB_RATING_HTML_BOT;
         cbCRHTML = resp.CB_CMT_RATING;
-        
+
         cbDet = resp.CB_DET;
         var rType = cbDet.RatingTypeId.substring(0,1);
-        
+
         for(var i = 0; i < commentBoxElm.length; i++) {
             cbElm = commentBoxElm[i];
             elmId = cbElm.id;
-            
+
             var cbElmCont = document.getElementById(elmId);
             cbElmCont.style.display="block";
-            
+
             var cbCont = document.getElementById("cbContainer-"+elmId);
         if(cbCont) {
             cbCont.style.display="block";
@@ -1991,7 +1991,7 @@ loadCBCommentCallback = function(res)
             if(cbDet.CBVisible == "0") {
                 cbCont.style.display="none";
             }
-            
+
             var rBotCont = document.getElementById("cbRatingContainerBot-"+elmId);
         if(rBotCont) {
             rBotCont.style.display = "block";
@@ -2017,7 +2017,7 @@ loadCBCommentCallback = function(res)
             cbNavig[elmId].NEXTVAL = 0;
             cbNavig[elmId].LASTVAL = 0;
 
-            
+
             getPaginationValues(cbNavig[elmId].STARTVAL, noOfRows, elmId);
             constructComments(cbNavig[elmId].STARTVAL, cbNavig[elmId].ENDVAL, elmId);
             if(noOfRows > cbGlobal.MAX_EXTRIES) {
@@ -2037,13 +2037,13 @@ loadCBCommentCallback = function(res)
             if(cbCommTitle) {
                 cbCommTitle.style.display="block";
             }
-            if(cbDet.IsClosed == "0" && cbFormCont && cbCommTitle) {    
+            if(cbDet.IsClosed == "0" && cbFormCont && cbCommTitle) {
                 cbFormCont.style.display="none";
                 if (noOfRows == 0 && cbCommTitle) {
                     cbCommTitle.style.display="none";
                 }
             }
-            
+
             if(cbRatingHTML) {
                 var cbLiId = document.getElementById("ratingFormId-"+elmId);
                 if(rType == "1") {
@@ -2085,7 +2085,7 @@ loadCBCommentCallback = function(res)
         }
     }
 }
-            
+
 showHideRateResults = function() {
     var actualPath = location.pathname;
     var path = actualPath.substr(1,actualPath.lastIndexOf(".")-1);
@@ -2094,12 +2094,12 @@ showHideRateResults = function() {
         return false;
     }
     var elmId = this.id.replace("rInfoIcon-", "");
-    
+
     var ratingResultsElem = document.getElementById(elmId+"_resultsDiv");
-    
+
     if(ratingResultsElem.style.display != "block"){
         ratingResultsElem.style.display = "block";
-        
+
         var rtCloseDial = ratingResultsElem.getElementsByClassName("rating-result-close")[0];
         rtCloseDial.addEventListener('click', function () {
             ratingResultsElem.style.display = "none";
@@ -2107,10 +2107,10 @@ showHideRateResults = function() {
     } else{
         ratingResultsElem.style.display = "none";
     }
-    
+
     if(mobile && ratingResultsElem.style.display == 'block' && !istab) {
         var wW = window.innerWidth || document.documentElement.clientWidth;
-    
+
         ratingResultsElem.style.position = "absolute";
         var whw = ((wW)/2);
         var divW = ((ratingResultsElem.clientWidth)/2);
@@ -2136,7 +2136,7 @@ showHideRateResults = function() {
             break;
         }
     }
-     
+
      var navId = e.id.replace("-"+elem,"");
      var showNavig;
 
@@ -2308,7 +2308,7 @@ fnSetBannerImg = function(src,banWid, banHei){
             }
         }
         if (cssText.indexOf( 'width' ) === -1 && cssText.indexOf( 'height' ) === -1) {
-            src.style.cssText = "position:relative;top:"+Math.floor((height-hei)/2)+"px;left:"+Math.floor((width-wid)/2)+"px;width:"+wid+"px;height:"+hei+"px";//NO I18N 
+            src.style.cssText = "position:relative;top:"+Math.floor((height-hei)/2)+"px;left:"+Math.floor((width-wid)/2)+"px;width:"+wid+"px;height:"+hei+"px";//NO I18N
         }
 
 
@@ -2380,7 +2380,7 @@ lightBox = function(src,caption){
     img.onload = function(){
         actHeight = height = this.height;
         actWidth = width = this.width;
-        img.style.cssText = "width:auto;height:"+height+"px;opacity:0;transition:opacity .2s;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;";//NO I18N        
+        img.style.cssText = "width:auto;height:"+height+"px;opacity:0;transition:opacity .2s;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;";//NO I18N
         imgCont.appendChild(this);
         if( winHeight < winWidth){
             if(this.height > winHeight-60){
@@ -2388,13 +2388,13 @@ lightBox = function(src,caption){
                 this.removeAttribute('height');
                 height = winHeight-60;
                 this.setAttribute("height", winHeight-60);
-                img.style.cssText = "width:auto;height:"+height+"px;opacity:0;transition:opacity .2s;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;";//NO I18N    
+                img.style.cssText = "width:auto;height:"+height+"px;opacity:0;transition:opacity .2s;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;";//NO I18N
             }
             if(this.clientWidth>winWidth-60){
                 this.removeAttribute('height');
-                this.setAttribute("width", winWidth-60 ); 
-                width = winWidth-60;                   
-                img.style.cssText = "height:auto;width:"+width+"px;opacity:0;transition:opacity .2s;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;";//NO I18N                    
+                this.setAttribute("width", winWidth-60 );
+                width = winWidth-60;
+                img.style.cssText = "height:auto;width:"+width+"px;opacity:0;transition:opacity .2s;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;";//NO I18N
             }
         }else{
             if(this.width >winWidth-60){
@@ -2402,13 +2402,13 @@ lightBox = function(src,caption){
                 this.removeAttribute('height');
                 width = winWidth-60;
                 this.setAttribute("width", winWidth-60 );
-                img.style.cssText = "height:auto;width:"+width+"px;opacity:0;transition:opacity .2s;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;";//NO I18N    
+                img.style.cssText = "height:auto;width:"+width+"px;opacity:0;transition:opacity .2s;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;";//NO I18N
             }
             if(this.clientHeight>winHeight-60){
                 this.removeAttribute('width');
-                this.setAttribute("height", winHeight-60 );                  
+                this.setAttribute("height", winHeight-60 );
                 height = winHeight-60;
-                img.style.cssText = "width:auto;height:"+height+"px;opacity:0;transition:opacity .2s;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;";//NO I18N    
+                img.style.cssText = "width:auto;height:"+height+"px;opacity:0;transition:opacity .2s;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;";//NO I18N
             }
         }
         imgCont.style.height = this.clientHeight+"px";
@@ -2539,7 +2539,7 @@ resizeElements = function(eve){
             }
             var prevParWidth=bannerparent.clientWidth;
             var prevParHeight=bannerparent.clientHeight;
-            
+
             banner.style.height = "auto";
             bannerparent.style.width="100%";
             bannerparent.style.width=bannerparent.clientWidth+"px";
@@ -2554,8 +2554,8 @@ resizeElements = function(eve){
         banner.style.width = ((banner.style.width).replace("px","")*(bannerparent.clientWidth/prevParWidth))+"px";
             banner.style.left = ((banner.style.left).replace("px","")*(bannerparent.clientWidth/prevParWidth))+"px";
             banner.style.top = ((banner.style.top).replace("px","")*(bannerparent.clientWidth/prevParWidth))+"px";
-            //banner.style.width = bannerparent.clientWidth+"px"; 
-            
+            //banner.style.width = bannerparent.clientWidth+"px";
+
             var overlay=document.getElementById("overlay");
             if(overlay){
                 var overlayHeight=overlay.clientHeight;
@@ -2570,7 +2570,7 @@ resizeElements = function(eve){
                 overlay.style.height=bannerparent.clientHeight+"px";
                 var elem=overlay.childNodes;
                 for(i=0;i<elem.length;i++){
-                    if(!(overlay.clientWidth>origOverlayWidth) && overlayWidth!==overlay.clientWidth){ 
+                    if(!(overlay.clientWidth>origOverlayWidth) && overlayWidth!==overlay.clientWidth){
                         elem[i].style.left=Math.floor((elem[i].offsetLeft/overlayWidth)*overlay.clientWidth)+"px";
                         elem[i].style.top=Math.floor((elem[i].offsetTop/overlayHeight)*overlay.clientHeight)+"px";
                         var temp;
@@ -2678,7 +2678,7 @@ resizeElements = function(eve){
                 tempOrigOverlayHeight=banner.clientHeight;
             }
             var overlay=document.getElementById("overTxt");
-            
+
             /*    tempOverlayHeight=banner.clientHeight;
                tempOverlayWidth=banner.clientWidth;
             var height=(banner.clientHeight/banner.clientWidth);
@@ -2851,12 +2851,12 @@ resizeOverlay=function(){
                             var fDiv="<div style=\"font-size:"+fontSize*1.2+"px\">"+fontElement.innerHTML+"</div>";
                             fontElement.innerHTML=fDiv;
                         }
- 
+
                         var padding=parseInt(navGetStyle(temp,"padding-left").replace("px",""));//NO I18N
                         temp.style.paddingLeft=temp.style.paddingRight=Math.floor((padding/tempOrigOverlayWidth)*overlay.clientWidth)+"px";//NO I18N
                         var padding1=parseInt(navGetStyle(temp,"padding-top").replace("px",""));//NO I18N
                         temp.style.paddingTop=temp.style.paddingBottom=Math.floor((padding1/tempOrigOverlayWidth)*overlay.clientWidth)+"px";//NO I18N
- 
+
                         var border=parseInt(navGetStyle(temp,"border").replace("px",""));//NO I18N
                         temp.style.border=Math.floor((border/tempOrigOverlayWidth)*overlay.clientWidth)+"px solid";
                         if(border && temp.style.border=="0px solid"){
@@ -2876,7 +2876,7 @@ resizeOverlay=function(){
                         }
                         temp.style.height="";//No I18N
                     }
-                }                
+                }
             }
 }
 
@@ -2925,22 +2925,22 @@ fnChangeTab = function(evt){
                 }
                 var agallery=document.getElementById('zpg'+childElements[i].id);
             }
-            albumCount.push(childElements[i]);  
+            albumCount.push(childElements[i]);
             galleryElements.push(document.getElementById('zpg'+childElements[i].id));
             }
-    }    
+    }
     childElements=accordionSelected.getElementsByClassName("flickr");//NO I18N
     for(var i=0;i<childElements.length;i++){
             if(childElements[i].clientHeight<75){
-            albumCount.push(childElements[i]);  
+            albumCount.push(childElements[i]);
             galleryElements.push(document.getElementById('zpg'+childElements[i].id));
             }
-    }    
+    }
     childElements=accordionSelected.getElementsByClassName("ownGallery");//NO I18N
     for(var i=0;i<childElements.length;i++){
-            albumCount.push(childElements[i]);  
+            albumCount.push(childElements[i]);
             galleryElements.push(document.getElementById('zpg'+childElements[i].id));
-    }    
+    }
     if(typeof(Gallery.fnShowOwnGalleryImgs)=="undefined"){
         if(albumCount.length>0){
             if(window.ZS_PreviewMode){
@@ -2997,7 +2997,7 @@ fnChangeTab = function(evt){
                 enableFacebookWidget();
                 window.FB.XFBML.parse();
             }
-    }   
+    }
     //for carousel
     var carousel=accordionSelected.getElementsByClassName("carousel");//NO I18N
         if(carousel){
@@ -3073,26 +3073,26 @@ function submitVote(param) {
         alert("Rating will work only on published website");
         return false;
     }
-    
+
     var inp = param.id;
     inpElm = document.getElementById(inp);
     inpElm.checked=true;
-    
+
     var eltCont = findParent(param, "zpelement-wrapper commentbox");//NO I18N
     var elmId = eltCont.id;
-    
+
     var resDiv = document.getElementById(elmId+"_resultsDiv");
     if(resDiv) {
     resDiv.style.display="none";
     }
-    
+
     var voteVal = inp.replace("rating-","");
     var rCont = document.getElementById("cbRatingContainer-"+elmId);
     rCont.setAttribute("curRating",voteVal);
-    
+
     var rFormId= param.parentNode.parentNode;
     rFormId.setAttribute("voted","true");
-    
+
     var actualPath = location.pathname;
 
     var path = actualPath.substr(1,actualPath.lastIndexOf(".")-1);
@@ -3101,9 +3101,9 @@ function submitVote(param) {
         path = path.replace("siteapps/protected/","");
     }
     var randVal = getBrowserCookie();
-    
+
     var paramsdata = "rateVal="+voteVal+"&path="+path+"&randVal="+randVal;  //No I18N
-    
+
     if(cbDet.CBVisible == "0" && cbDet.RatingVisible == "1") {
         var ie = /*@cc_on!@*/false;
         if(!ie){
@@ -3119,7 +3119,7 @@ function addRankVotesCallback(resp) {
     var currRData = cbResults.RESULT.currUsrRatingData;
     var totResData = cbResults.RESULT.usrTotVoteResults;
     var rType = cbDet.RatingTypeId.substring(0,1);
-    
+
     if(document.querySelectorAll){
         var matches = document.querySelectorAll("div.rating-outer-container");  //NO I18N
         for(p=0;p<matches.length;p++){
@@ -3133,7 +3133,7 @@ function addRankVotesCallback(resp) {
                     for(var i = 0; i < commentBoxElm.length; i++) {
                         cbElm = commentBoxElm[i];
                         elmId = cbElm.id;
-                        
+
                         if(cbResults.CB_RATING_RESULT) {
                             var resDiv = document.getElementById(elmId+"_resultsDiv");
                             if(resDiv) {
@@ -3141,15 +3141,15 @@ function addRankVotesCallback(resp) {
                             }
                         }
                     }
-                    
+
                     var rateAvgDiv = starRatingDiv[0].parentNode.nextSibling.nextSibling;
                     var vStr = (totResData.votes > 1) ? "Votes" : "Vote";    //NO I18N
-                    rateAvgDiv.innerHTML = totResData.average + "/ 5 ("+totResData.votes+" "+vStr+")"; 
+                    rateAvgDiv.innerHTML = totResData.average + "/ 5 ("+totResData.votes+" "+vStr+")";
                 }
                 else if(rType == "2") {
                     var thumbUpResDiv = rateCont.querySelectorAll("div.thumb-up-result");   //NO I18N
                     thumbUpResDiv[0].innerHTML=totResData.rateScale1;
-                
+
                     var thumbDownResDiv = rateCont.querySelectorAll("div.thumb-down-result");   //NO I18N
                     thumbDownResDiv[0].innerHTML=totResData.rateScale2;
                 }
@@ -3162,12 +3162,12 @@ var rateVal;
 function generateCookie() {
 
     var get_as_float=5.5;
-  
+
     var now = new Date().getTime() / 1000;
     var s = parseInt(now, 10);
 
     var ans = (get_as_float) ? now : (Math.round((now - s) * 1000) / 1000) + ' ' + s;
-    
+
     var v = ans+""+Math.random().toString(36).slice(2);
     var f = v.replace(".","");
     return f;
@@ -3337,7 +3337,7 @@ getBlogPostCommentsCount = function () {
     var count_elements = document.querySelectorAll('span[data-post-id]');//NO I18N
     if(count_elements.length != 0) {
         var resource_ids = [];
-        Object.keys(count_elements).map(function(index){ 
+        Object.keys(count_elements).map(function(index){
             resource_ids.push(count_elements[index].getAttribute('data-post-id'));
         })
         var request_uri = "/siteapps/commentbox/commentscount?resource_ids=" + resource_ids.join();//NO I18N
@@ -3348,11 +3348,10 @@ getBlogPostCommentsCount = function () {
 getBlogPostCommentsCountHandler = function (response, count_elements) {
     if(response.trim() != "") {
         var count_map = JSON.parse(response);
-        Object.keys(count_elements).map(function(index){ 
+        Object.keys(count_elements).map(function(index){
             var post_id = count_elements[index].getAttribute('data-post-id');
             var count = count_map[post_id];
             count_elements[index].innerHTML = "Comments("+ count +")";//NO I18N
         })
     }
 }
-
