@@ -37,6 +37,22 @@ var ZS_ColumnFix=false;var responsiveTheme=false;var ZS_FormAppName="moreants-37
 <script src="/siteforms/appcreator/live/common/js/searchableInput.js"></script>
 <script src="/siteforms/appcreator/live/common/js/app.js"></script>
 <script src="/siteforms/appcreator/live/common/js/securityutil.js"></script>
+
+<script type="text/javascript">
+  function validate_Human() {
+    const marpat = /^[Mm][aA][rR][aA][nN][tT][zZ]/;
+    let user_human = document.getElementById("entry.296203394").value.toUpperCase();
+    let regxres = marpat.test(user_human);
+    if (regxres) {
+      return true;
+    } else if (user_human == null || user_human == "") {
+      return true;
+    }  else {
+      return false;
+    }
+  }
+</script>
+
 </head>
 <body style="">
 
@@ -140,25 +156,15 @@ var ZS_ColumnFix=false;var responsiveTheme=false;var ZS_FormAppName="moreants-37
             </div>
 <!-- 10Nov2022 added test for human to slow down the bots -->
 <!-- 11Nov2022 revised test for human to check against regex -->
+<!-- 13Nov2022 revised to hide humanity check form field -->
                 <div id="elm_ANpp64gjSiqpAqfgzRbsnw" class="zpelement-wrapper form" name="form">
                     <div class="zpAlignPos" id="zpform_Contact_Us">
-                      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onLoad="if(validate_Human()){document.getElementById('successMessage').style.display='block';}" frameborder="0"></iframe>
+                      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onLoad="if(submitted){document.getElementById('successMessage').style.display='block';}" frameborder="0"></iframe>
                       <div>
-                        <form name="Contact_Us" id="contactForm" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScmvOyvEqdOqBZZ-6HeIHowladB4RGX-76t6NZYOn3-swPdrw/formResponse?" target="hidden_iframe">
+                        <form name="Contact_Us" id="contactForm" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScmvOyvEqdOqBZZ-6HeIHowladB4RGX-76t6NZYOn3-swPdrw/formResponse?" target="hidden_iframe" onSubmit="submitted=true;">
                           <h5 class="frmname">Or submit Moreants Contact Form (Google Client ID: 80905201981) </h5>
                           <div><br>The information you type in the boxes below will be saved to a Google spreadsheet and emailed to us.</br></div>
-                          <script type="text/javascript">
-                            function validate_Human() {
-                              const marpat = /^[Mm][aA][rR][aA][nN][tT][zZ]/;
-                              let user_human = document.getElementById("entry.296203394").value.toUpperCase();
-                              let regxres = marpat.test(user_human);
-                              if (regxres) {
-                                return true;
-                              }  else {
-                                return false;
-                              }
-                            }
-                            </script>
+
                           <ul>
                             <li id="Contact_Us-Name-1">
                               <label>Name</label>
@@ -180,14 +186,14 @@ var ZS_ColumnFix=false;var responsiveTheme=false;var ZS_FormAppName="moreants-37
                               <label>Message</label>
                               <textarea name="entry.1344347411" id="entry.1344347411" ></textarea>
                             </li>
-                            <li id="Contact_Us-Marantz_Test">
-                              <label>Required please type:   MARANTZ</label>
-                              <textarea name="entry.296203394" id="entry.296203394" style="text-transform: uppercase" required></textarea>
+                            <li id="Contact_Us-Marantz_Test" style="visibility: hidden !important;">
+                              <label hidden>Required please type:   MARANTZ</label>
+                              <textarea name="entry.296203394" id="entry.296203394" style="visibility: hidden !important;" autocomplete="off" maxlength="10" spellcheck=false></textarea>
                             </li>
                             <li>
                               <label>&nbsp;</label>
                               <div>
-                                <button class="btn" type="submit" onclick="return validate_Human();">Send</button>
+                                <button type="submit" onClick="JavaScript:return validate_Human();">Send</button>
                                 <input type="reset" value="Reset">
                               </div>
                             </li>
