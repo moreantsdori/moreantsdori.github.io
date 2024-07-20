@@ -52,7 +52,7 @@ Disallow: /
 User-agent: cohere-ai
 Disallow: /
 
-* block webz.io (omigili) which sells crawled data to AI companies
+# block webz.io (omigili) which sells crawled data to AI companies
 
 User-agent: Omgilibot
 Disallow: /
