@@ -2336,8 +2336,7 @@ lightBox = function(src,caption){
     var closeBtn = document.createElement("div");
     closeBtn.className="slideShowCloseCont"
     closeBtn.innerHTML="<div style='float: left;' class='slideShowCloseImg'></div><span style='float: left; padding-left: 5px;'>Close</span>";
-// Pinterest removed 18Aug24
-//    var pinitBtn = document.createElement("div");
+    var pinitBtn = document.createElement("div");
     var imgSrc = src.src;
     var caption = "";
     if(src.nextSibling && src.nextSibling.nextSibling){
