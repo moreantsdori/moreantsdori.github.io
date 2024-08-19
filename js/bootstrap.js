@@ -2460,25 +2460,25 @@ lightBox = function(src,caption){
 
 
 // all pinterest removed 18Aug24
-// function ZP_Pinterest_Load (src,des){
-//     if(window.ZS_PublishMode && !window.ZS_PreviewMode){
-//
-//         var url = encodeURIComponent(document.URL);
-//         if(src.indexOf(("ht"+"tp"))==-1){
-//             src = "ht"+"tp://"+document.domain+src;// No I18N
-//         }
-//         var src = encodeURIComponent(src);
-//         pinterestURL ="ht"+"tp://www.pinterest.com/pin/create/button/?url="+url+"&media="+src;// No I18N
-//         if(des && des!=' '){
-//             pinterestURL+="&description="+encodeURIComponent(des);// No I18N
-//         }
-//         window.open(pinterestURL ,"","width=800,height=300");// No I18N
-//     }
-//     else{
-//          parent.Dialog.alert(parent.i18n('pages.builder.pinit.msg'),'information');
-//     }
-//
-// }
+function ZP_Pinterest_Load (src,des){
+    if(window.ZS_PublishMode && !window.ZS_PreviewMode){
+
+        var url = encodeURIComponent(document.URL);
+        if(src.indexOf(("ht"+"tp"))==-1){
+            src = "ht"+"tp://"+document.domain+src;// No I18N
+        }
+        var src = encodeURIComponent(src);
+        pinterestURL ="ht"+"tp://www.pinterest.com/pin/create/button/?url="+url+"&media="+src;// No I18N
+        if(des && des!=' '){
+            pinterestURL+="&description="+encodeURIComponent(des);// No I18N
+        }
+        window.open(pinterestURL ,"","width=800,height=300");// No I18N
+    }
+    else{
+         parent.Dialog.alert(parent.i18n('pages.builder.pinit.msg'),'information');
+    }
+
+}
 
 fnGetDocumentElements_IEfix = function(tag, attr, value, parentElem){
     var elemList = new Array();
