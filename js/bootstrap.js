@@ -2343,8 +2343,8 @@ lightBox = function(src,caption){
         caption =  src.nextSibling.nextSibling.innerHTML;
     }
     // Pinterest button removed from picture expansion 18Aug24
-    // pinitBtn.style.cssText = "position:absolute;cursor:pointer;background:url(/zimages/zspinit.png);width:55px;height:25px;";// No I18N
-    // pinitBtn.onclick = function(){ ZP_Pinterest_Load(imgSrc,caption);}
+    pinitBtn.style.cssText = "position:absolute;cursor:pointer;background:url(/zimages/zspinit.png);width:55px;height:25px;";// No I18N
+    pinitBtn.onclick = function(){ ZP_Pinterest_Load(imgSrc,caption);}
 
     closeBtn.style.cssText = "position:absolute;right:-13px;top:0px;cursor:pointer;background: url(../zimages/slideshow.png) 0 -80px no-repeat;width: 14px;height: 14px;";//NO I18N
     var func = function(){window.onresize=null;window.onkeypress=null;document.body.style.overflow = "auto";document.body.removeChild(mask);};
