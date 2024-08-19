@@ -1,4 +1,5 @@
 /*$Id: navigation-load.js,v 2126:25524a5ec327 2011/07/28 10:46:26 prashantd $*/
+/* Pinterst button removed from expanded board pictures window */
 var _domloaded,drtimer;
 var xmlhttp;
 var formscount = new Array();
