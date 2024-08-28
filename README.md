@@ -1,4 +1,4 @@
 # moreantsdori.github.io
- www.moreants.com
+ moreants.com
  Vintage Marantz Parts
 
