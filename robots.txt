@@ -23,35 +23,6 @@ Disallow: /
 User-Agent: OAI-SearchBot
 Disallow: /
 
-# block Google Bard AI
-
-User-agent: Google-Extended
-Disallow: /
-
-User-agent: GoogleBot
-Disallow: /
-
-User-agent: GoogleImageProxy
-Disallow: /
-
-User-agent: AdsBot-Google
-Disallow: /
-
-User-agent: GoogleOther
-Disallow: /
-
-User-agent: GoogleOther-Image
-Disallow: /
-
-User-Agent: Googlebot-Image
-Disallow: /
-
-User-agent: Google-CloudVertexBot
-Disallow: /
-
-User-Agent: Mediapartners-Google
-Disallow: /
-
 # block training for Alexis
 
 User-agent: Amazonbot
@@ -172,16 +143,6 @@ User-agent: Twitterbot
 Disallow: /
 
 User-agent: ia_archiver
-Disallow: /
-
-# block DuckDuckGo
-
-User-agent: DuckAssistBot
-Disallow: /
-
-# block Bing
-
-User-Agent: bingbot/
 Disallow: /
 
 # block The Hive image generation but including reverse image lookup
