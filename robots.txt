@@ -4,6 +4,8 @@
 User-agent: Google-InspectionTool
 Allow: /
 
+# no way to know if this works for all of these
+
 # block Common Crawl
 
 User-agent: CCBot
