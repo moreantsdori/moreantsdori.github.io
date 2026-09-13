@@ -3,8 +3,10 @@
   <title>Moreants - Requiem</title><meta name="keywords" content="" />
   <meta name="description" content="" /><meta property="og:title" content="Moreants - Requiem"/>
   <meta property="og:url" content="https://moreants.com/requiem.html" />
-    <!-- viewport tag added as advised by Google  -->
+  <!-- viewport tag added as advised by Google  -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- added to resolve video player configuration error 20260912  -->
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <link href="/theme/content_style.css" rel="stylesheet" type="text/css" />
   <link href="/theme/style.css" rel="stylesheet" type="text/css" />
   <link href="/theme/contentreset_style.css" type="text/css" rel="stylesheet" />
@@ -98,7 +100,11 @@ span.s3 {
             </div>
 
             <div id="elm_ZMjU-OFyQGCA4KjV5a9DZw" class="zpelement-wrapper iframe"><div><div class="zpAlignPos" style="text-align:left;">
-                    <iframe id=""  src="//www.youtube.com/embed/yiMhrSWmtlE?&wmode=transparent" allowfullscreen="true" width="425" height="344"  frameBorder="0" ></iframe></div></div></div>
+<!-- stopped working 202609 <iframe id=""  src="//www.youtube.com/embed/yiMhrSWmtlE?&wmode=transparent" allowfullscreen="true" width="425" height="344"  frameBorder="0" ></iframe></div></div></div> -->
+<!-- copied from "share" link on Ari's youtube page 20260912. her page is:   https://www.youtube.com/watch?v=yiMhrSWmtlE   -->
+              <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/yiMhrSWmtlE?si=2fd_WHGGNWsZhJq6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+              <iframe width="560" height="315" src="https://youtube-nocookie.com/embed/yiMhrSWmtlE?si=2fd_WHGGNWsZhjq6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 </div>
 </div>
       </div>
